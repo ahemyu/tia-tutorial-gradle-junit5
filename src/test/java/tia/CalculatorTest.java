@@ -10,10 +10,19 @@ public class CalculatorTest {
     public void testSum() {
         assertEquals(3, new Calculator().sum(1, 2));
     }
+    @Test
+    public void testSum2() {
+        assertEquals(7, new Calculator().sum(4, 3));
+    }
 
     @Test
     public void testMinus() {
         assertEquals(1, new Calculator().minus(3, 2));
+    }
+
+    @Test
+    public void testMinus2() {
+        assertEquals(-1, new Calculator().minus(1, 2));
     }
 
 }
